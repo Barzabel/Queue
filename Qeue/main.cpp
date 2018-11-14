@@ -1,6 +1,8 @@
 #include<iostream>
 #include"Queue.h"
+
 using namespace std;
+
 
 
 
@@ -12,7 +14,10 @@ int main() {
 	a.enqueue(4);
 	a.enqueue(5);
 
-	cout << a.dequeue()<<endl;
+
+
+
+	fun(a, 3);
 	cout << a.dequeue() << endl;
 
 	return 0;

@@ -2,7 +2,7 @@
 #ifndef _QUEUE_
 #define _QUEUE_
 #include"steck/steck.h"
-
+#include<cmath>
 
 
 
@@ -18,6 +18,8 @@ public:
 
 	unsigned int size();
 
+	T peek();
+
 	~Queue();
 private:
 	Steck<T> *In;
@@ -28,6 +30,14 @@ private:
 
 
 
+
+template<class T>
+void fun(Queue<T> &a, int n) {
+	for (int i = 0; i < abs(n); i++)
+	{
+		a.enqueue(a.dequeue());
+	}
+}
 
 
 
