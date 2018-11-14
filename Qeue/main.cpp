@@ -8,17 +8,14 @@ using namespace std;
 
 int main() {
 	Queue<int> a;
-	a.enqueue(1);
-	a.enqueue(2);
-	a.enqueue(3);
-	a.enqueue(4);
-	a.enqueue(5);
+	for (int i = 0; i < 20; i++) {
+		a.enqueue(i);
+	}
+	fun(a, 19);
+	for (int i = 0; i < 20; i++) {
+		cout<<a.dequeue()<<endl;
+	}
 
-
-
-
-	fun(a, 3);
-	cout << a.dequeue() << endl;
 
 	return 0;
 }
